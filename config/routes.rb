@@ -3,5 +3,7 @@ Rails.application.routes.draw do
   
   # 一覧表示のためのルーティングを設定
   get 'goals' => 'goals#index'
+  # トップ画面のためのルーティングを設定
+  root 'goals#top'
   
 end
