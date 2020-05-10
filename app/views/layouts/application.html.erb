@@ -10,8 +10,26 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
+    
+  <div class="header">
+    <div class="header-logo">
+      <h3>Let's try together</h3>
+    </div>
+    <div class="site-explanation">
+      <h3>サイト説明</h3>
+    </div>
+  </div>
+  
     <%= yield %>
+    
+  <div class="footer">
+    <div class="success-story">
+      <h3>success story</h3>
+    </div>
+    <div class="contact">
+      <h3>contact</h3>
+    </div>
+  </div>
   </body>
 </html>
