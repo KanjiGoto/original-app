@@ -1,9 +1,38 @@
+body{
+  background-color: #FF99FF;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  margin: 0 auto;
+}
 header{
   background-color: #99FFCC;
   outline: 1px solid black;
+  height: 50px;
 }
 footer{
   background-color: #99FFCC;
   outline: 1px solid black;
-  
+  height: 50px;
 }
+
+// 基本レイアウト
+// body{
+//   background-color: #FF99FF;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   width: 1200px;
+//   margin: 0 auto;
+// }
+// header{
+//   background-color: #99FFCC;
+//   outline: 1px solid black;
+//   height: 150px;
+// }
+// footer{
+//   background-color: #99FFCC;
+//   outline: 1px solid black;
+//   height: 150px;
+// }
