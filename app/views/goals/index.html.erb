@@ -1,5 +1,18 @@
 <div class="contents">
     <nav>left</nav>
-    <main>center</main>
+    <main>
+        <div class="main-box">
+        <% @goals.each do |goal| %>
+        <div class="individual-goal">
+            <h3>個人の目標</h3>
+          <p class="important"><%= goal.goal %></p>
+          <p><%= goal.reason %></p>
+          <p><%= goal.future %></p>
+        </div>
+        <% end %>
+        
+        
+        </div>
+    </main>
     <aside>right</aside>
 </div>
