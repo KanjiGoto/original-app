@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get 'goals' => 'goals#index'
   # トップ画面のためのルーティングを設定
   root 'goals#top'
+  # サイトの説明の画面を表示させるためのルーティング
   get 'pages/index' => "pages#index"
   
 end
