@@ -17,6 +17,44 @@ footer{
   height: 50px;
 }
 
+// ボタンの色をわかりやすくつけている
+.button-color{
+  
+}
+a{
+  display: inline-block;
+  text-decoration: none;
+  background-color: #FFFF00
+}
+
+
+.header-logo{
+  // 左に寄せた
+  float: left;
+  
+  // ボタンとして修正した
+  line-height: 50px;
+  text-align: center;
+  width: 200px;
+  text-decoration: none;
+  font-size: 25px;
+}
+.header-list{
+  // ヘッダーのリストを右寄せして初期設定
+  display: flex;
+  list-style: none;
+  float: right;
+  
+  li{
+    // ボタンの位置や大きさを微調整した
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 0 10px;
+  }
+}
+
 // 基本レイアウト
 // body{
 //   background-color: #FF99FF;
@@ -36,3 +74,4 @@ footer{
 //   outline: 1px solid black;
 //   height: 150px;
 // }
+
