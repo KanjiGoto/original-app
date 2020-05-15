@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   
   # 一覧表示のためのルーティングを設定
-  get 'goals' => 'goals#index'
+  get 'goals/index' => 'goals#index'
   # 目標を投稿するためのルーティングを設定
   get 'goals/new' => 'goals#new'
   # 投稿した目標を保存するためのルーティングを設定
