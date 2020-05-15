@@ -44,3 +44,16 @@ aside{
 //   outline: 1px solid black;
 //   width: 150px;
 // }
+
+// メインメッセージを真ん中に配置させた
+.main-box{
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 250px 0;
+  
+  .site-expalanation-button{
+    padding: 10px 100px;
+    margin: 10px;
+  }
+}
