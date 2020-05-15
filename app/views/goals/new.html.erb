@@ -1,0 +1,17 @@
+<div class="contents">
+    <nav>left</nav>
+    <main>
+        <div class="main-box">
+        <h3>投稿する内容</h3>
+  
+    <!--パスにはcreateアクションへのパスを設定する-->
+    <%= form_tag('/blogs', method: :post) do %>
+
+      <textarea name="text" placeholder="ここに入力してください" row="5" cols="50"></textarea>
+      <input type="submit" value="SEND" class="submit-button">
+
+    <% end %>
+        </div>
+    </main>
+    <aside>right</aside>
+</div>
