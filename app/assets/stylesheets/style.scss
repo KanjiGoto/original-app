@@ -1,3 +1,4 @@
+// 基本設定
 body{
   background-color: #FF99FF;
   min-height: 100vh;
@@ -11,11 +12,37 @@ header{
   outline: 1px solid black;
   height: 50px;
 }
+
+.contents{
+  display: flex;
+  flex: 1;
+}
+
+nav{
+  background-color: #99FFCC;
+  outline: 1px solid black;
+  width: 150px;
+}
+
+main{
+  background-color: #99FFCC;
+  outline: 1px solid black;
+  flex: 1;
+}
+
+aside{
+  background-color: #99FFCC;
+  outline: 1px solid black;
+  width: 150px;
+}
 footer{
   background-color: #99FFCC;
   outline: 1px solid black;
   height: 50px;
 }
+// 基本設定
+
+
 
 // ボタンの色をわかりやすくつけている
 .button-color{
@@ -55,23 +82,4 @@ a{
   }
 }
 
-// 基本レイアウト
-// body{
-//   background-color: #FF99FF;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   width: 1200px;
-//   margin: 0 auto;
-// }
-// header{
-//   background-color: #99FFCC;
-//   outline: 1px solid black;
-//   height: 150px;
-// }
-// footer{
-//   background-color: #99FFCC;
-//   outline: 1px solid black;
-//   height: 150px;
-// }
 
