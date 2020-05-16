@@ -17,6 +17,8 @@ Rails.application.routes.draw do
   get 'goals/:id/edit' => 'goals#edit'
   # 編集画面で編集したものを更新するためのルーティングを設定
   patch 'goals/:id' => 'goals#update'
+  # 投稿した目標の詳細を表示する
+  get 'goals/:id' => 'goals#show'
   
   
   # サイトの説明の画面を表示させるためのルーティング
