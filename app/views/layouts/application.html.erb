@@ -20,7 +20,7 @@
     </div>
       <ul class="header-list">
         <% if user_signed_in? %>
-          <%= link_to "目標投稿", goals_new_path, class: :'post' %>
+          <li class="post"><a href="/users/<%= current_user.id %>">マイページ</a></li>
           <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: :'post' %>
         <% else %>
           <%= link_to "ログイン", new_user_session_path, class: 'post' %>
