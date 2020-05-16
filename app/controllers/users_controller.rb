@@ -2,7 +2,8 @@ class UsersController < ApplicationController
   
   def show
     @nickname = current_user.nickname
-    @goals = Goal.where(user_id: current_user.id)
+    # アソシエーションを利用した記述に変更
+    @goals = current_user.goals
   end
   
 end
