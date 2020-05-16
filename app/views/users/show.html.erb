@@ -9,6 +9,9 @@
             <p class="important"><%= goal.goal %></p>
             <p><%= goal.reason %></p>
             <p><%= goal.future %></p>
+            
+            <%= link_to "削除", "/goals/#{goal.id}", method: :delete %>
+            
           </div>
         <% end %>
         
