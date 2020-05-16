@@ -4,9 +4,10 @@ class GoalsController < ApplicationController
   end
   
   def index
-    @goals = Goal.all
-    # # 目標を投稿したユーザーのニックネームをアソシエーションを利用して呼び出す
-    # @nickname = @goals.users.nickname
+    # アソシエーションを利用しているため、goalsテーブルから呼び出すのと同時にusersテーブルからニックネームを呼び出すというn+1問題が発生している
+    # n+1問題を解消するために、includesメソッドを利用して、goalsテーブルのレコードを取得するのと同時にusersテーブルのレコードも同時に取得可能になっている
+    @goals = Goal.all.includes(:user)
+    
   end
   
   def new
