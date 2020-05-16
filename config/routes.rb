@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   delete 'goals/:id' => 'goals#destroy'
   # 投稿した目標の詳細を編集するためのルーティングを設定
   get 'goals/:id/edit' => 'goals#edit'
+  # 編集画面で編集したものを更新するためのルーティングを設定
+  patch 'goals/:id' => 'goals#update'
   
   
   # サイトの説明の画面を表示させるためのルーティング
