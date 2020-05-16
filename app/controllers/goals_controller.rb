@@ -11,7 +11,7 @@ class GoalsController < ApplicationController
   end
   
   def create
-    Goal.create(goal_params)
+    Goal.create(goal: goal_params[:goal], reason: goal_params[:reason], future: goal_params[:future], user_id: current_user.id)
   end
   
   
