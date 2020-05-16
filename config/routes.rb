@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   post 'goals' => 'goals#create'
   # トップ画面のためのルーティングを設定
   root 'goals#top'
+  
   # 投稿した目標を削除するルーティングを設定
   delete 'goals/:id' => 'goals#destroy'
   
