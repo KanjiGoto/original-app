@@ -5,9 +5,13 @@
           <div class="individual-goal">
             <h2>目標の再考</h3>
             <h4>目標をこまめに再構築することで目標達成率が上がります</h2>
-            <textarea type="text" name="goal" row="5" cols="50"><%= @goal.goal %></textarea>
-            <textarea type="text" name="reason" row="5" cols="50"><%= @goal.reason %></textarea>
-            <textarea type="text" name="future" row="5" cols="50"><%= @goal.future %></textarea>
+            
+            <%= form_tag("/goals/#{@goal.id}", method: :patch) do %>
+                <textarea type="text" name="goal" row="5" cols="50"><%= @goal.goal %></textarea>
+                <textarea type="text" name="reason" row="5" cols="50"><%= @goal.reason %></textarea>
+                <textarea type="text" name="future" row="5" cols="50"><%= @goal.future %></textarea>
+              <input type="submit" value="SEND" class="submit-button">
+            <% end %>
             
             <a href="/users/<%= current_user.id %>" class="return-index">マイページにもどる</a>
               </div>
