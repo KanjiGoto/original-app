@@ -10,7 +10,11 @@
           <p><%= goal.future %></p>
         </div>
         <% end %>
-        <a href="goals/new" class="post-button">目標を投稿する</a>
+        <% if user_signed_in? %>
+          <a href="/goals/new" class="post-button">目標を投稿する</a>
+        <% else %>
+          <a href="/users/sign_up" class="post-button">さあ私たちと一緒にはじめよう</a>
+        <% end %>
         
         </div>
     </main>
