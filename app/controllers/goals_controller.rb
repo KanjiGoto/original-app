@@ -23,6 +23,12 @@ class GoalsController < ApplicationController
     end
   end
   
+  def edit
+    @goal = Goal.find(params[:id])
+    
+    # if goal.user_id == current.user.id
+  end
+  
   
   private
   def goal_params
