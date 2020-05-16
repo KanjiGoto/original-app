@@ -11,7 +11,7 @@
             <p><%= goal.future %></p>
             
             <%= link_to "削除", "/goals/#{goal.id}", method: :delete %>
-            
+            <%= link_to "編集", "/goals/#{goal.id}/edit" %>
           </div>
         <% end %>
         
