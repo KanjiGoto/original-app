@@ -5,6 +5,8 @@ class GoalsController < ApplicationController
   
   def index
     @goals = Goal.all
+    # # 目標を投稿したユーザーのニックネームをアソシエーションを利用して呼び出す
+    # @nickname = @goals.users.nickname
   end
   
   def new

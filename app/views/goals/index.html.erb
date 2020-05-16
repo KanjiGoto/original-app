@@ -4,7 +4,8 @@
         <div class="main-box">
         <% @goals.each do |goal| %>
         <div class="individual-goal">
-            <h3>個人の目標</h3>
+            <!--アソシエーションを利用して、goal.user.nicknameとすることで他のモデルのデータを簡単に呼び出すことができた-->
+            <h3><%= goal.user.nickname %>の目標</h3>     
           <p class="important"><%= goal.goal %></p>
           <p><%= goal.reason %></p>
           <p><%= goal.future %></p>
