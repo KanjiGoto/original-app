@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   
   # 一覧表示のためのルーティングを設定
   get 'index' => 'goals#index'
+  # マイページを表示させるためのルーティング
+  get 'user/:id' => 'user#show'
   # 目標を投稿するためのルーティングを設定
   get 'goals/new' => 'goals#new'
   # 投稿した目標を保存するためのルーティングを設定
