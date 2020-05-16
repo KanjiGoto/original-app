@@ -25,8 +25,13 @@ class GoalsController < ApplicationController
   
   def edit
     @goal = Goal.find(params[:id])
-    
-    # if goal.user_id == current.user.id
+  end
+  
+  def update
+    goal = Goal.find(params[:id])
+    if goal.user_id == current_user.id
+      goal.update(goal_params)
+    end
   end
   
   
@@ -34,4 +39,8 @@ class GoalsController < ApplicationController
   def goal_params
     params.permit(:goal, :reason, :future)
   end
+  
+  # def goal_params_update
+  #   params.permit(:goal, :reson, :future)
+  # end
 end
